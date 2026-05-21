@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>栖味餐厅</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="栖味餐厅首页">
+        <span class="brand-mark">Q</span>
+        <span>栖味</span>
+      </a>
+      <nav class="nav-links" aria-label="页面导航">
+        <a href="#menu">菜单</a>
+        <a href="#space">空间</a>
+        <a href="#reserve">订位</a>
+        <a href="#visit">到店</a>
+      </nav>
+      <a class="header-action" href="#reserve">预约</a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="餐厅介绍">
+        <img class="hero-image" src="assets/restaurant-hero.png" alt="现代中式餐厅的餐桌与晚餐氛围" />
+        <div class="hero-scrim"></div>
+        <div class="hero-content">
+          <p class="eyebrow">现代中式小馆 · 晚餐与茶酒</p>
+          <h1>栖味餐厅</h1>
+          <p class="hero-copy">
+            当季食材、炭火香气与清爽茶饮，适合两人晚餐、朋友小聚和安静的商务用餐。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#reserve">今晚订位</a>
+            <a class="button secondary" href="#menu">查看菜单</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="quick-info" aria-label="餐厅关键信息">
+        <div>
+          <span>营业时间</span>
+          <strong>17:30 - 23:00</strong>
+        </div>
+        <div>
+          <span>人均</span>
+          <strong>¥180 - ¥260</strong>
+        </div>
+        <div>
+          <span>位置</span>
+          <strong>城市中心 · 近地铁</strong>
+        </div>
+        <div>
+          <span>服务</span>
+          <strong>堂食 · 私宴 · 茶酒</strong>
+        </div>
+      </section>
+
+      <section class="section menu-section" id="menu">
+        <div class="section-heading">
+          <p class="eyebrow">Seasonal Menu</p>
+          <h2>招牌菜单</h2>
+          <p>菜单按节气微调，保留稳定招牌，让新客和常客都能点得从容。</p>
+        </div>
+        <div class="menu-grid">
+          <article class="menu-card">
+            <div>
+              <p class="menu-type">冷菜</p>
+              <h3>藤椒青笋拌鲜虾</h3>
+              <p>脆笋、鲜虾、藤椒油与青柠，入口清亮。</p>
+            </div>
+            <strong>¥68</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <p class="menu-type">热菜</p>
+              <h3>炭烤桂花蜜汁叉烧</h3>
+              <p>慢烤梅花肉，外层微焦，搭配桂花蜜汁。</p>
+            </div>
+            <strong>¥98</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <p class="menu-type">主食</p>
+              <h3>蟹粉葱油拌面</h3>
+              <p>手工细面、蟹粉酱与热葱油，香气直接。</p>
+            </div>
+            <strong>¥88</strong>
+          </article>
+          <article class="menu-card">
+            <div>
+              <p class="menu-type">甜品</p>
+              <h3>乌龙奶冻配焦糖杏仁</h3>
+              <p>轻茶香、细腻奶冻和脆杏仁收尾。</p>
+            </div>
+            <strong>¥42</strong>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section" id="space">
+        <div class="space-panel">
+          <p class="eyebrow">Dining Room</p>
+          <h2>安静、明亮、留有距离感</h2>
+          <p>
+            主厅以木、石、绿植和低照度灯光组合，桌距舒适；半开放厨房保留烟火气，但不打扰谈话节奏。
+          </p>
+        </div>
+        <div class="experience-list" aria-label="用餐体验">
+          <div>
+            <span>01</span>
+            <p>2-4 人桌为主，适合晚餐约会和小型聚餐。</p>
+          </div>
+          <div>
+            <span>02</span>
+            <p>8-12 人包间可安排固定菜单与茶酒搭配。</p>
+          </div>
+          <div>
+            <span>03</span>
+            <p>服务节奏偏从容，完整晚餐建议预留 90 分钟。</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reserve-section" id="reserve">
+        <div class="section-heading compact">
+          <p class="eyebrow">Reservation</p>
+          <h2>预订餐位</h2>
+          <p>提交后会生成本地确认信息，便于前端演示和二次接入真实订位系统。</p>
+        </div>
+        <form class="reserve-form" id="reserveForm">
+          <label>
+            姓名
+            <input name="name" type="text" placeholder="例如：陈女士" required />
+          </label>
+          <label>
+            日期
+            <input name="date" type="date" required />
+          </label>
+          <label>
+            时间
+            <select name="time" required>
+              <option value="">请选择</option>
+              <option>17:30</option>
+              <option>18:30</option>
+              <option>19:30</option>
+              <option>20:30</option>
+            </select>
+          </label>
+          <label>
+            人数
+            <input name="guests" type="number" min="1" max="12" value="2" required />
+          </label>
+          <label class="wide">
+            备注
+            <textarea name="note" rows="3" placeholder="忌口、儿童座椅或包间需求"></textarea>
+          </label>
+          <button class="button primary wide" type="submit">确认预订</button>
+          <p class="form-result" id="formResult" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="visit-section" id="visit">
+        <div>
+          <p class="eyebrow">Visit</p>
+          <h2>到店信息</h2>
+          <p>淮海中路 318 号 2 层，步行 3 分钟可达地铁站。晚高峰建议提前 10 分钟到店。</p>
+        </div>
+        <a class="button secondary" href="tel:021-88886666">021-8888-6666</a>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
